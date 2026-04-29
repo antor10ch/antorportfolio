@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sreejon Biswas Antor — CS Researcher & TinyML Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ PRELOADER ═══════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">SBA</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <div class="preloader-text">Initializing...</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CUSTOM CURSOR ═══════════════ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Antor<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#about"        class="nav-link">About</a>
+      <a href="#skills"       class="nav-link">Skills</a>
+      <a href="#research"     class="nav-link">Research</a>
+      <a href="#projects"     class="nav-link">Projects</a>
+      <a href="#publications" class="nav-link">Publications</a>
+      <a href="#achievements" class="nav-link">Awards</a>
+      <a href="#contact"      class="nav-link">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-dot"></span>
+        Available for Research Collaboration
+      </div>
+      <h1 class="hero-name reveal-up">
+        <span class="name-line">Sreejon</span>
+        <span class="name-line accent-line">Biswas Antor</span>
+      </h1>
+      <div class="hero-tagline reveal-up">
+        <span class="tagline-prefix">I am a </span>
+        <span id="typingText" class="typing-text"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-bio reveal-up">
+        Ranked <strong>#1</strong> CS student at BIGC, Beijing — building intelligent
+        edge systems at the intersection of <em>TinyML</em>, embedded hardware, and
+        autonomous agents.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <span class="stat-num">3.59</span>
+          <span class="stat-label">GPA / 4.00</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">92.2%</span>
+          <span class="stat-label">Step Success Rate</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">#1</span>
+          <span class="stat-label">Class Rank</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal-left">01 — About Me</div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-image-frame">
+            <div class="about-image-placeholder">
+            <img src="D:\Antor portfolio website\antor.jpg" alt="Sreejon Biswas Antor" class="avatar-image">
+            <div class="avatar-ring"></div>
+            <div class="avatar-glow"></div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-icon">📍</span>
+              <span>Beijing, China</span>
+            </div>
+          </div>
+          <div class="about-image-deco"></div>
+        </div>
+        <div class="about-text reveal-right">
+          <h2 class="section-title">Crafting Intelligence<br/><em>at the Edge</em></h2>
+          <p class="about-para">
+            I'm a <strong>Computer Science student</strong> at Beijing Institute of
+            Graphic Communication, specialising in embedded systems, low-power IoT,
+            and applied machine learning. My passion lies in pushing ML models onto
+            resource-constrained devices — making sensing intelligent without
+            sacrificing efficiency.
+          </p>
+          <p class="about-para">
+            Currently leading research into <strong>LLM-based Web UI Agents</strong>
+            and exploring multilingual autonomous systems. Previously contributed to
+            flexural wave encoding research, bridging signal processing with intelligent
+            detection.
+          </p>
+          <div class="about-chips">
+            <span class="chip">TinyML</span>
+            <span class="chip">Edge Intelligence</span>
+            <span class="chip">IoT Systems</span>
+            <span class="chip">Autonomous Agents</span>
+            <span class="chip">Signal Processing</span>
+          </div>
+          <div class="about-edu">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-title">BSc Computer Science & Technology</div>
+              <div class="edu-sub">Beijing Institute of Graphic Communication
+                · GPA 3.59/4.00 · Expected June 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">02 — Technical Arsenal</div>
+      <h2 class="section-title centered reveal-up">Skills & Technologies</h2>
+      <p class="section-sub centered reveal-up">Tools I reach for when building intelligent systems</p>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" data-delay="0">
+          <div class="skill-card-header">
+            <div class="skill-icon">⚡</div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Python</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>C / C++</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Java</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>JavaScript</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label"><span>Go</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="1">
+          <div class="skill-card-header">
+            <div class="skill-icon">🧠</div>
+            <h3>Machine Learning & AI</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill highlight">TinyML</span>
+            <span class="skill-pill highlight">LLM Agents</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">Signal Processing</span>
+            <span class="skill-pill">Anomaly Detection</span>
+            <span class="skill-pill">Edge Inference</span>
+            <span class="skill-pill">Neural Networks</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="2">
+          <div class="skill-card-header">
+            <div class="skill-icon">🗄️</div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill highlight">PostgreSQL</span>
+            <span class="skill-pill highlight">MongoDB</span>
+            <span class="skill-pill">Redis</span>
+            <span class="skill-pill">Query Optimisation</span>
+            <span class="skill-pill">Data Modelling</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="3">
+          <div class="skill-card-header">
+            <div class="skill-icon">🚀</div>
+            <h3>DevOps & Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill highlight">Docker</span>
+            <span class="skill-pill highlight">GitLab CI/CD</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">Node.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ RESEARCH ═══════════════ -->
+  <section id="research" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">03 — Research Experience</div>
+      <h2 class="section-title centered reveal-up">Research Journey</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-meta">
+            <span class="timeline-year">2025 — Present</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-role">Lead Researcher</span>
+              <span class="timeline-badge active">Active</span>
+            </div>
+            <h3 class="timeline-title">LLM-Based Web UI Agents</h3>
+            <p class="timeline-desc">
+              Leading research on autonomous agents capable of interacting with web user
+              interfaces through large language models. Achieved a
+              <strong>92.2% step success rate</strong> — state-of-the-art for multilingual
+              UI navigation tasks.
+            </p>
+            <div class="timeline-tags">
+              <span class="t-tag">LLMs</span>
+              <span class="t-tag">Autonomous Agents</span>
+              <span class="t-tag">Multilingual NLP</span>
+              <span class="t-tag">Web Automation</span>
+            </div>
+            <div class="timeline-metric">
+              <div class="metric-bar" style="--pct:92.2%"></div>
+              <span>92.2% Step Success Rate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-meta">
+            <span class="timeline-year">2023 — 2024</span>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-role">Research Contributor</span>
+              <span class="timeline-badge completed">Completed</span>
+            </div>
+            <h3 class="timeline-title">Flexural Wave Encoding</h3>
+            <p class="timeline-desc">
+              Contributed to research exploring flexural wave propagation as an encoding
+              medium for data transmission in structural systems. Bridged signal processing
+              theory with practical anomaly detection applications.
+            </p>
+            <div class="timeline-tags">
+              <span class="t-tag">Signal Processing</span>
+              <span class="t-tag">Wave Mechanics</span>
+              <span class="t-tag">Anomaly Detection</span>
+              <span class="t-tag">Embedded Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-interests reveal-up">
+        <h3 class="ri-title">Research Interests</h3>
+        <div class="ri-grid">
+          <div class="ri-item"><span class="ri-icon">🔬</span><span>TinyML</span></div>
+          <div class="ri-item"><span class="ri-icon">📡</span><span>Wireless Sensor Networks</span></div>
+          <div class="ri-item"><span class="ri-icon">⚡</span><span>Low-Power Embedded Systems</span></div>
+          <div class="ri-item"><span class="ri-icon">〰️</span><span>Signal Processing</span></div>
+          <div class="ri-item"><span class="ri-icon">🌐</span><span>Edge Intelligence</span></div>
+          <div class="ri-item"><span class="ri-icon">🤖</span><span>Autonomous Agents</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">04 — Projects</div>
+      <h2 class="section-title centered reveal-up">Featured Work</h2>
+      <p class="section-sub centered reveal-up">Systems built to solve real problems</p>
+
+      <div class="projects-grid">
+        <div class="project-card reveal-up" data-delay="0">
+          <div class="project-card-glow"></div>
+          <div class="project-number">01</div>
+          <div class="project-top">
+            <div class="project-icon">🛒</div>
+            <div class="project-links">
+              <a href="https://github.com/antorch10" target="_blank" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Secure E-Commerce Android App</h3>
+          <p class="project-desc">Full-stack mobile commerce platform with optimised MongoDB queries,
+            secure payment flow, and RESTful API backend. Focused on performance and data security at scale.</p>
+          <div class="project-tech">
+            <span>Node.js</span><span>MongoDB</span><span>Android</span><span>REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up featured-card" data-delay="1">
+          <div class="project-card-glow"></div>
+          <div class="project-number">02</div>
+          <div class="project-top">
+            <div class="project-icon">🤖</div>
+            <div class="project-links">
+              <a href="https://github.com/antorch10" target="_blank" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="featured-ribbon">Featured</div>
+          <h3 class="project-title">AI Chatbot with Speech Recognition</h3>
+          <p class="project-desc">Conversational AI assistant integrating real-time speech-to-text
+            with a large language model backend. Built with Flask microservices architecture
+            and natural dialogue management.</p>
+          <div class="project-tech">
+            <span>Flask</span><span>LLM</span><span>Speech-to-Text</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="2">
+          <div class="project-card-glow"></div>
+          <div class="project-number">03</div>
+          <div class="project-top">
+            <div class="project-icon">🏗️</div>
+            <div class="project-links">
+              <a href="https://github.com/antorch10" target="_blank" class="project-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Technical Portfolio Platform</h3>
+          <p class="project-desc">Production-grade portfolio hosting system with automated CI/CD
+            pipelines, containerised deployment, and Spring Boot backend. Demonstrates the full
+            DevOps cycle end-to-end.</p>
+          <div class="project-tech">
+            <span>Spring Boot</span><span>Docker</span><span>GitLab CI/CD</span><span>Java</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PUBLICATIONS ═══════════════ -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">05 — Publications</div>
+      <h2 class="section-title centered reveal-up">Academic Work</h2>
+
+      <div class="pub-list">
+        <div class="pub-item reveal-up">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <div class="pub-type">Conference / Workshop Paper</div>
+            <h3 class="pub-title">Multilingual Capabilities of LLM-Based Web UI Agents</h3>
+            <p class="pub-authors">Sreejon Biswas Antor et al.</p>
+            <p class="pub-abstract">Investigating the cross-lingual generalisation abilities of
+              large language model agents when navigating complex web user interfaces. Demonstrates
+              robust multilingual task completion with 92.2% step-level accuracy across diverse
+              UI environments.</p>
+            <div class="pub-tags">
+              <span>LLM Agents</span><span>Multilingual NLP</span>
+              <span>Web Automation</span><span>2025</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item reveal-up">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <div class="pub-type">Journal Paper</div>
+            <h3 class="pub-title">LLM-Based Web UI Agents: Architecture and Evaluation</h3>
+            <p class="pub-authors">Sreejon Biswas Antor et al.</p>
+            <p class="pub-abstract">A comprehensive journal study on the design, architecture,
+              and systematic evaluation of autonomous agents leveraging LLMs for web interface
+              interaction — covering benchmarks, failure modes, and scalability considerations.</p>
+            <div class="pub-tags">
+              <span>Autonomous Systems</span><span>UI Interaction</span>
+              <span>Benchmark</span><span>2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ACHIEVEMENTS ═══════════════ -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">06 — Achievements</div>
+      <h2 class="section-title centered reveal-up">Honours & Awards</h2>
+
+      <div class="awards-grid">
+        <div class="award-card reveal-up" data-delay="0">
+          <div class="award-glow"></div>
+          <div class="award-icon">🏆</div>
+          <h3 class="award-title">Beijing Overseas Students Scholarship</h3>
+          <p class="award-year">2024</p>
+          <p class="award-desc">Awarded for academic excellence and outstanding research contribution
+            among international students at BIGC, Beijing.</p>
+        </div>
+        <div class="award-card reveal-up" data-delay="1">
+          <div class="award-glow"></div>
+          <div class="award-icon">💻</div>
+          <h3 class="award-title">Programming Contest Winner</h3>
+          <p class="award-year">Competitive Programming</p>
+          <p class="award-desc">First-place recognition in programming competition, demonstrating
+            superior algorithmic thinking and problem-solving under pressure.</p>
+        </div>
+        <div class="award-card reveal-up" data-delay="2">
+          <div class="award-glow"></div>
+          <div class="award-icon">🚀</div>
+          <h3 class="award-title">Innovation Competition Awards</h3>
+          <p class="award-year">Multiple Recognitions</p>
+          <p class="award-desc">Recognised across multiple university innovation and technology
+            competitions for creative solutions in embedded and intelligent systems.</p>
+        </div>
+        <div class="award-card reveal-up" data-delay="3">
+          <div class="award-glow"></div>
+          <div class="award-icon">🥇</div>
+          <h3 class="award-title">Class Rank #1</h3>
+          <p class="award-year">GPA 3.59 / 4.00</p>
+          <p class="award-desc">Maintained top academic standing throughout the programme while
+            actively contributing to research and extracurricular competitions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">07 — Contact</div>
+      <h2 class="section-title centered reveal-up">Let's Collaborate</h2>
+      <p class="section-sub centered reveal-up">
+        Open to research collaborations, project discussions, and exciting opportunities.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <div class="contact-detail">
+              <div class="cd-icon">📧</div>
+              <div>
+                <div class="cd-label">Email</div>
+                <a href="mailto:antor10@qq.com" class="cd-value">antor10@qq.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon">📍</div>
+              <div>
+                <div class="cd-label">Location</div>
+                <div class="cd-value">Beijing, China</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon">🐙</div>
+              <div>
+                <div class="cd-label">GitHub</div>
+                <a href="https://github.com/antorch10" target="_blank" class="cd-value">
+                  github.com/antorch10
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/antorch10" target="_blank" class="social-btn" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="mailto:antor10@qq.com" class="social-btn" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Research Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Let's build something intelligent together..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✓ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Antor<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">
+        Designed & built by <strong>Sreejon Biswas Antor</strong> · Beijing, China · 2026
+      </p>
+      <p class="footer-tagline">Crafting intelligence at the edge of possibility.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
